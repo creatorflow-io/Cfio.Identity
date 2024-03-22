@@ -1,0 +1,25 @@
+﻿{
+    "Serilog": {
+        "MinimumLevel": {
+          "Default": "Error",
+          "Override": {
+            "Skoruba": "Information",
+            "Cfio": "Information",
+            "Microsoft.EntityFrameworkCore.Database.Command": "Information"
+          }
+        },
+        "WriteTo": [
+            {
+                "Name": "Console"
+            },
+            {
+                "Name": "File",
+                "Args": {
+                    "path": "Log/skoruba_admin.txt",
+                    "rollingInterval": "Day"
+                }
+            }
+            
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+vast.ai
+
+python -m venv yolo
+source yolo/bin/activate
+pip install ultralytics
+apt-get update && apt-get install libgl1
+
+1x RTX 4090 24GB $0.56/hr -> $19/200 epochs
+	yolov9c batch_size 16 ~ 10mins, 11GB
+	yolov9c batch_size 32 ~ 10mins, 22GB
+	
+2x RTX 4090 24GB $0.808/hr -> $14/200 epochs
+	yolov9c batch_size 32 ~ 5mins, 22GB
+	yolov9c batch_size 64 ~ 5mins, 22GB
+	
+4x RTX A4000 16GB $0.808/hr -> $14/200 epochs
+	cannot monitor on multiple gpus
+
+4x RTX A5000 24GB $0.888/hr
+	cannot monitor on multiple gpus
+	
+1x RTX 6000 ADA $1.108/hr 
+	yolov9c batch_size 32 > 7mins, 22GB

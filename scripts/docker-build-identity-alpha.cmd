@@ -1,0 +1,1 @@
+ docker build -f .\src\Cfio.IdentityServer.STS.Identity\Dockerfile --no-cache --tag cfioisidentity:dev --rm --build-arg GITHUB_PACKAGE_USERNAME --build-arg GITHUB_PACKAGE_TOKEN .

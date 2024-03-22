@@ -1,0 +1,25 @@
+﻿{
+  "IdentityData": {
+    "Roles": [
+      {
+        "Name": "admin"
+      }
+    ],
+    "Users": [
+      {
+        "Username": "admin",
+        "Password": "P@s$w0rd123",
+        "Email": "admin@creatorflow.io",
+        "Roles": [
+          "admin"
+        ],
+        "Claims": [
+          {
+            "Type": "name",
+            "Value": "admin"
+          }
+        ]
+      }
+    ]
+  }
+}

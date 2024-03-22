@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+      <TargetFramework>$(AppTargetFramework)</TargetFramework>
+		<Description>Entity Framework layer for the administration of the Duende IdentityServer and Asp.Net Core Identity with PostrgreSQL support</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="obj\**" />
+      <EmbeddedResource Remove="obj\**" />
+      <None Remove="obj\**" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+	    <ProjectReference Include="..\Cfio.IdentityServer.Admin.EntityFramework.Shared\Cfio.IdentityServer.Admin.EntityFramework.Shared.csproj" />
+    </ItemGroup>
+
+</Project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

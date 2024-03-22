@@ -1,0 +1,1 @@
+ docker build -f .\src\Cfio.IdentityServer.Admin\Dockerfile --tag cfioisadmin:dev --rm --build-arg GITHUB_PACKAGE_USERNAME --build-arg GITHUB_PACKAGE_TOKEN .

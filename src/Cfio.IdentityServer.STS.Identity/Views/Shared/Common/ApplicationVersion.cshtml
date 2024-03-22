@@ -1,0 +1,19 @@
+﻿@using System.Reflection
+@using Cfio.IdentityServer.STS.Identity
+@using Cfio.IdentityServer.STS.Identity.Helpers;
+
+@{
+    var runtimeVersion = typeof(StartupHelpers)
+        .GetTypeInfo()
+        .Assembly
+        .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+}
+
+@runtimeVersion
+
+
+
+
+
+
+

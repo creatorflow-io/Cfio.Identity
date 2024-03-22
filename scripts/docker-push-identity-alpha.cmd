@@ -1,0 +1,1 @@
+docker image tag cfioisidentity:dev ductrantb/cfioisidentity:dev &&  docker image push ductrantb/cfioisidentity:dev
